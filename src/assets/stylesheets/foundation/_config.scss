@@ -4,9 +4,12 @@ $secondary: #949C7C;
 $dark: #000000;
 $muted: #707070;
 $light: #FFFFFF;
+$danger: #930000;
 
 // ----- Font ----- //
-$display: 50px;
+$display1: 50px;
+$display2: 40px;
+$display3: 26px;
 $h1: 36px;
 $h2: 24px;
 $h3: 20px;
@@ -23,6 +26,7 @@ $sm-media: 480px;
 $md-media: 768px;
 $lg-media: 1024px;
 $xl-media: 1124px;
+$ui-media: 1366px;
 
 @mixin smallphone {
   @media (max-width: $xs-media) {
@@ -50,6 +54,12 @@ $xl-media: 1124px;
 
 @mixin largepc {
   @media (max-width: $xl-media) {
+    @content;
+  }
+}
+
+@mixin uidesign {
+  @media (max-width: $ui-media) {
     @content;
   }
 }

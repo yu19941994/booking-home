@@ -22,7 +22,9 @@
 
 .btn-lg{
   border: 1px solid $light;
-  padding: 9px 121px;
+  width: 100%;
+  padding: 9px 0;
+ 
 }
 
 @include btn-constructer('primary', $light, $primary);

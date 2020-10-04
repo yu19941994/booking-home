@@ -4,8 +4,8 @@
   }
 }
 
-@mixin font-constructer($str, $color) {
-  .font-#{$str} {
+@mixin fontC-constructer($str, $color) {
+  .fontC-#{$str} {
     color: $color;
   }
 }
@@ -24,5 +24,10 @@
 @include font-constructer('h7', $h7);
 @include font-constructer('h8', $h8);
 @include font-constructer('h9', $h9);
-@include font-constructer('display', $display);
-@include font-constructer('light', $light);
+@include font-constructer('display1', $display1);
+@include font-constructer('display2', $display2);
+@include font-constructer('display3', $display3);
+@include fontC-constructer('light', $light);
+@include fontC-constructer('primary', $primary);
+@include fontC-constructer('secondary', $secondary);
+@include fontC-constructer('danger', $danger);
