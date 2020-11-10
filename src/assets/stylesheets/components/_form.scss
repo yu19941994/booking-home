@@ -23,9 +23,18 @@
   }
   label{
     padding-bottom: 7px;
+    @include pad () {
+      margin-top: 14px;
+    }
   }
   input{
-    height: 30px;
+    height: 36px;
+    padding: 0;
+    border-radius: 8px;
+    width: 100%;
+    @include pad () {
+      width: 90%;
+    }
   }
   .btn-lg{
     margin-bottom: 18px;

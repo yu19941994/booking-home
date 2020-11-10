@@ -18,6 +18,14 @@
       user-select: none;
       pointer-events: none;
     }
+    .backTo {
+      position: absolute;
+      top: 90px;
+      left: 48px;
+      span{
+        padding: 0 8px;
+      }
+    }
     &-layer{
       position: absolute;
       left: 0;
@@ -77,6 +85,9 @@
   max-width: 390px;
   @include uidesign (){
     grid-template-columns: repeat(5, 1fr);
+  }
+  @include smartphone (){
+    grid-template-columns: repeat(4, 1fr);
   }
   &-icon{
     position: relative;

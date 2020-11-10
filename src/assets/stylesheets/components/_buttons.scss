@@ -1,7 +1,11 @@
-@mixin btn-constructer($str, $color, $background) {
+@mixin btn-constructer($str, $color, $background, $hovercolor, $hoverbackground) {
   .btn-#{$str}, .btn-lg-#{$str} {
     color: $color;
     background-color: $background;
+    &:hover, &:active{
+      color: $hovercolor;
+      background-color: $hoverbackground;
+    }
   }
 }
 
@@ -18,6 +22,7 @@
 .btn{
   border: none;
   padding: 8.5px 60.38px;
+
 }
 
 .btn-lg{
@@ -27,4 +32,4 @@
  
 }
 
-@include btn-constructer('primary', $light, $primary);
+@include btn-constructer('primary', $light, $primary, $primary, $secondary);
