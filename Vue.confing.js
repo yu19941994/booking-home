@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/booking/dist/',
+    publicPath: '/booking-home/dist/',
 };
